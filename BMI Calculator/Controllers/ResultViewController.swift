@@ -10,13 +10,20 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    var bmiVal :String?
+    
+    @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var adviseLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bmiLabel.text = bmiVal
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func reCalculate(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
