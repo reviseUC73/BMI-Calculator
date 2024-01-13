@@ -22,9 +22,9 @@ This project involves the development of a BMI (Body Mass Index) Calculator appl
 
 ## Result Screens
 <table>
-  <tr><img src="./Picture BMI Calculator/BMI-result1.png" alt="BMI Calculator Result Screen 1" width="200"/> </tr>
-  <tr><img src="./Picture BMI Calculator/BMI-result2.png" alt="BMI Calculator Result Screen 2" width="200"/> </tr>
-  <tr>
-<img src="./Picture BMI Calculator/BMI-result3.png" alt="BMI Calculator Result Screen 3" width="200"/>
- </tr>
+<tr>
+  <td><img src="./Picture BMI Calculator/BMI-result1.png" alt="BMI Calculator Result Screen 1" width="200"/> </td>
+  <td><img src="./Picture BMI Calculator/BMI-result2.png" alt="BMI Calculator Result Screen 2" width="200"/> </td>
+  <td><img src="./Picture BMI Calculator/BMI-result3.png" alt="BMI Calculator Result Screen 3" width="200"/> </td>
+  </tr>
 <table>
