@@ -18,9 +18,13 @@ This project involves the development of a BMI (Body Mass Index) Calculator appl
 # Picture BMI Calculator
 
 ## Main Screen
-<img src="BMI-mainscreen.png" alt="BMI Calculator Main Screen" width="200"/>
+<img src="./Picture BMI Calculator/BMI-mainscreen.png" alt="BMI Calculator Main Screen" width="200"/>
 
 ## Result Screens
-<img src="./Picture BMI Calculator/BMI-result1.png" alt="BMI Calculator Result Screen 1" width="200"/>
-<img src="./Picture BMI Calculator/BMI-result2.png" alt="BMI Calculator Result Screen 2" width="200"/>
+<table>
+  <tr><img src="./Picture BMI Calculator/BMI-result1.png" alt="BMI Calculator Result Screen 1" width="200"/> </tr>
+  <tr><img src="./Picture BMI Calculator/BMI-result2.png" alt="BMI Calculator Result Screen 2" width="200"/> </tr>
+  <tr>
 <img src="./Picture BMI Calculator/BMI-result3.png" alt="BMI Calculator Result Screen 3" width="200"/>
+ </tr>
+<table>
