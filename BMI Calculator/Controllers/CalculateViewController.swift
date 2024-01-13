@@ -9,9 +9,9 @@
 import UIKit
 
 class CalculateViewController: UIViewController {
+        
+    var calulatorBrainModel = CalulatorBrainModel()
 
-    var bmiVale = "0.0"
-    
     @IBOutlet weak var wSlider: UISlider!
     @IBOutlet weak var hSlider: UISlider!
     @IBOutlet weak var wLabel: UILabel!
@@ -35,8 +35,11 @@ class CalculateViewController: UIViewController {
     @IBAction func calButtomPress(_ sender: UIButton) {
         let w_value = wSlider.value
         let h_value = hSlider.value
-        let bmi = w_value / ( h_value *  h_value  )
-        bmiVale = String(format: "%.1f" , bmi)
+        
+//      let bmi = w_value / ( h_value *  h_value  )
+//      bmiVale = String(format: "%.1f" , bmi)
+        calulatorBrainModel.calculateBMI(w_value: w_value, h_value: h_value)
+
         
         self.performSegue(withIdentifier: "goToResultScreen", sender: self)
 //        print( String(format: "%.1f" , bmi))
@@ -54,7 +57,9 @@ class CalculateViewController: UIViewController {
         // Pass the selected object to the new view controller.
         if(segue.identifier == "goToResultScreen"){
             let destinationVC = segue.destination as! ResultViewController // as! === '='
-            destinationVC.bmiVal =  bmiVale
+            destinationVC.bmiVal = calulatorBrainModel.getBMIValue()
+            destinationVC.advice = calculatorBrain.getAdvice()
+            destinationVC.color = calculatorBrain.getColor()
         }
         
     }
