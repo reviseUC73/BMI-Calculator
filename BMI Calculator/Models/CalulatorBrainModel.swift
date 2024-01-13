@@ -6,7 +6,6 @@
 //  Copyright © 2567 BE Angela Yu. All rights reserved.
 //
 
-import Foundation
 import UIKit
 struct CalulatorBrainModel {
     var BmiModel:BMIModel?
@@ -14,18 +13,31 @@ struct CalulatorBrainModel {
     func getBMIValue() -> String {
         let formatStringBMI = String(format: "%.1f" , BmiModel?.value ?? 0.0)
         return formatStringBMI
-//        if let safeBMI = bmi {
-//        if bmi != nil{
-//            let formatStringBMI = String(format: "%.1f" , safeBMI)
-//            let formatStringBMI = String(format: "%.1f" , bmi!)
-//            return formatStringBMI
-//        }
-//        else {
-//            return "0.0"
-//        }
-
+    }
+   
+    func getAdvice() -> String {
+        return BmiModel?.advice ?? "No advice"
     }
     
+    func getColor() -> UIColor {
+        return BmiModel?.color ?? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
+    
+    
+//    func getColor() ->UIColor {
+//        if BmiModel?.color != nil{
+//            return BmiModel!.color
+//        }
+//        return UIColor.white
+//    }
+//    
+//    func getAdvice() -> String {
+//        if let safeAdvice = BmiModel?.advice {
+//        return safeAdvice
+//        }else {
+//            return "non text"
+//        }
+//    }
     mutating func calculateBMI(w_value : Float , h_value : Float) {
         let bmiValue = w_value / ( h_value * h_value  )
         

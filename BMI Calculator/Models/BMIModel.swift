@@ -6,7 +6,6 @@
 //  Copyright © 2567 BE Angela Yu. All rights reserved.
 //
 
-import Foundation
 import UIKit
 struct BMIModel {
     let value :Float

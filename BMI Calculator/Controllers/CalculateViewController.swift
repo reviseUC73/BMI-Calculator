@@ -41,7 +41,7 @@ class CalculateViewController: UIViewController {
         calulatorBrainModel.calculateBMI(w_value: w_value, h_value: h_value)
 
         
-        self.performSegue(withIdentifier: "goToResultScreen", sender: self)
+        performSegue(withIdentifier: "goToResultScreen", sender: self)
 //        print( String(format: "%.1f" , bmi))
 //        let SubViewControl = SubViewController()
 //        SubViewControl.bmiVale = String(format: "%.1f" , bmi) // sent value to view (MVVM)
@@ -58,8 +58,8 @@ class CalculateViewController: UIViewController {
         if(segue.identifier == "goToResultScreen"){
             let destinationVC = segue.destination as! ResultViewController // as! === '='
             destinationVC.bmiVal = calulatorBrainModel.getBMIValue()
-            destinationVC.advice = calculatorBrain.getAdvice()
-            destinationVC.color = calculatorBrain.getColor()
+            destinationVC.advice = calulatorBrainModel.getAdvice()
+            destinationVC.color = calulatorBrainModel.getColor()
         }
         
     }
