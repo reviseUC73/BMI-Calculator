@@ -16,7 +16,6 @@ This project involves the development of a BMI (Body Mass Index) Calculator appl
 4. **BMI Calculation:** Users can input their height and weight, and the app calculates their BMI. The calculation logic is encapsulated in the Model component, adhering to the MVC principles.
 
 # Picture BMI Calculator
-
 ## Main Screen
 <img src="./Picture BMI Calculator/BMI-mainscreen.png" alt="BMI Calculator Main Screen" width="200"/>
 
